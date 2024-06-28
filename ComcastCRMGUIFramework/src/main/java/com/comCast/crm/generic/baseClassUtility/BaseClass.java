@@ -12,6 +12,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -29,6 +30,7 @@ import com.comCast.crm.objectrepositoryutility.LoginPage;
  * @author Pratyusha
  * class for configure all pre and post conditions for every test scripts
  */
+@Listeners(com.comCast.crm.generic.listenersUtility.ListenersPractice.class)
 public class BaseClass {
 
 	public DataBaseUtility dlib = new DataBaseUtility();

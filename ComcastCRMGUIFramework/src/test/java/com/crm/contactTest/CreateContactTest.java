@@ -3,13 +3,13 @@ package com.crm.contactTest;
 import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.Status;
 import com.comCast.crm.generic.ObjectUtility.UtilityClassObject;
 import com.comCast.crm.generic.baseClassUtility.BaseClass;
-import com.comCast.crm.generic.listenersUtility.ListenersPractice;
 import com.comCast.crm.objectrepositoryutility.ContactInformationPage;
 import com.comCast.crm.objectrepositoryutility.ContactPage;
 import com.comCast.crm.objectrepositoryutility.CreateContactPage;
@@ -23,7 +23,7 @@ import junit.framework.Assert;
  * @author Pratyusha
  * ListenersPractice. class for create contact with different fileds
  */
-//@Listeners(com.comCast.crm.generic.listenersUtility.ListenersPractice.class)
+@Listeners(com.comCast.crm.generic.listenersUtility.ListenersPractice.class)
 public class CreateContactTest extends BaseClass {
 /**
  * ListenersPractice. for create contact
